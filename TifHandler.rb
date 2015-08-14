@@ -22,7 +22,7 @@ BLANK_LINE = "010011011"
 
 
 def create_black_and_white_dics
-	text = File.open("/home/lifman/hello_world/HuffmanFaxCodes.txt").read()
+	text = File.open("./HuffmanFaxCodes.txt").read()
 	text = text.gsub(" " , "")
 	lines = text.split("\n")
 	black = {}
@@ -248,7 +248,7 @@ def create_gui(bitstream)
         return root
 end
 
-FILENAME = "/home/lifman/hello_world/CCITT_3.TIF"
+FILENAME = "./CCITT_3.TIF"
 
 BLACK, WHITE = create_black_and_white_dics()
 bitstream = get_bitstream(FILENAME)
