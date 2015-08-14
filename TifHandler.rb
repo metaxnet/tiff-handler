@@ -218,9 +218,6 @@ def decode(bitstream, width, black, white)
 	return output
 end
 
-def display(bitstream, canvas)
-	return
-end
 def create_gui(bitstream)
         root = TkRoot.new() { title "Canvas, Grid, and Scrollbars" }
         vbar = TkScrollbar.new(root) { orient 'vert' }
